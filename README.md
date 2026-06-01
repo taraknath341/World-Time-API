@@ -3,16 +3,16 @@
 ### Step 1: Install Dependencies
 Run the following command:
 ```bash
-npm i express cors
+yarn install
 ```
 ### Step 2: Start the Server
 If you are not using Serverless Functions
 ```bash
-node index.js
+yarn start
 ```
 If you want to use it inside a Serverless Functions
 ```bash
-node app.js
+yarn run serverless
 ```
 ### Step 3: Access the Server
 The server runs on port 3000.

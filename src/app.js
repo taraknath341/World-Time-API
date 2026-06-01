@@ -1,7 +1,7 @@
 "use strict";
 const express = require("express");
 const cors = require("cors");
-const time = require("./time.js");
+const time = require("./process-time.js");
 const app = express();
 
 app.use(cors());
@@ -17,7 +17,7 @@ app.all("/24", (req, res) => {
 app.use((req, res) => {
   res.status(404).json({
     status: 404,
-    message: "শুধুমাত্র /12 এবং /24 নামে Route আছে। "
+    message: "Routes exist only with the names /12 and /24."
   })
 })
 

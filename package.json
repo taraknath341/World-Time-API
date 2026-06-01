@@ -1,17 +1,17 @@
 {
-  "name": "world_time",
-  "version": "1.0.0",
-  "description": "",
+  "name": "world_time_api",
+  "version": "1.0.1",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/index.js",
+    "serverless": "node src/app.js"
   },
   "keywords": [],
   "author": "Taraknath Karan",
-  "license": "GPL",
+  "license": "MIT",
   "type": "commonjs",
   "dependencies": {
-    "cors": "^2.8.6",
-    "express": "^5.2.1"
+    "cors": "2.8.6",
+    "express": "5.2.1"
   }
 }

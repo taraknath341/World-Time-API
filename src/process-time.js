@@ -1,4 +1,4 @@
-const timeArray = require("./timearray.json");
+const timeArray = require("./countrys-time-list.json");
 function time() {
   try {
     const date = new Date();
@@ -41,7 +41,6 @@ function time() {
       if (minute < 10) {
         minute = "0" + minute;
       }
-
       timeObj24[iv.country] = `${hour}:${minute}`;
       // 12 hour
       if (+hour > 12) {
@@ -55,7 +54,6 @@ function time() {
         timeObj12[iv.country] = `${hour}:${minute} AM`;
       }
     })
-    console.log(timeObj24);
     return {
       hour24: timeObj24,
       hour12: timeObj12
